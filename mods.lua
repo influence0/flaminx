@@ -14,15 +14,12 @@ function initiateNames()
 		if v.Character then
 			if MODS[v.UserId] then
 				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
-			end
-			if ADMIN[v.UserId] then
+			elseif ADMIN[v.UserId] then
 				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
-			end
-			if not ADMIN[v.UserId] or MODS[v.UserId] then
-				v.Character.UpperTorso:FindFirstChild('OriginalSize') then
+			else
+			v.Character.UpperTorso:FindFirstChild('OriginalSize') then
 				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('🔥] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
 			end
-		end
 		
 		end
 	end
